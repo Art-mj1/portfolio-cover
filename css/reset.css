@@ -20,4 +20,28 @@ a {
 body {
  font-size: 14px;
 }
-/* Google Font Link */
+textarea {
+ resize: none;
+}
+input,button,textarea{outline:0;border-radius: 0; border:0; padding:10px; 
+ color:#777;}
+
+ /* title */
+.tit_box {
+ width: 100%;
+ height: auto;
+ display: flex;
+ align-items: center;
+ /* justify-content: center; */
+ flex-direction: column;
+ padding: 0 0 50px 0;
+}
+.tit_box h2 {
+ font-size: 50px;
+ font-weight: 200; 
+ margin:0 0 20px 0;
+}
+.tit_box p {
+ font-size: 18px;
+ font-weight: 300;text-align:center;
+}

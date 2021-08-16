@@ -4,10 +4,11 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset CSS Link -->
  <link rel="stylesheet" href="/portfolio-cover/css/reset.css">
  <!-- Main CSS Link -->
  <link rel="stylesheet" href="/portfolio-cover/css/style.css">
-  <!-- Main CSS Link -->
+  <!-- Library CSS Link -->
   <link rel="stylesheet" href="/portfolio-cover/lib/lightslider.css">
  <title>Portfolio cover</title>
 </head>
@@ -22,8 +23,8 @@
     <li><a href="#">CONTACT</a></li>
    </ul>
   </header>
-  <!-- First Section -->
-  <section class="first">
+  <!-- Intro Section -->
+  <section class="">
    <div class="min-image"></div>
    
    <div class="min-intro">
@@ -92,7 +93,7 @@
   <section class="graphic">
     <h2>Personal Work</h2>
     <div class="all"id="lightslider">
-      <div class="center" >
+      <div class="target">
         <div class="clock pe">
         <h2>01</h2>
         <div class="imgs"><img src="img/clock.png"></div>
@@ -170,26 +171,57 @@
       </div>
     </div>
   </section>
-  <!-- End of Graphic Section -->
+    <!-- End of Graphic Section -->
     <!--Profile Section--> 
-    <section class="profile">
-    <div class="pic">
-      <img src="img/min-background.jpg">
-    </div>
-     <div class="year">
-       <h2>프로파일링</h2>
-       <div class="ye-text">
-         <p>고려대학교 고고미술사학과/한국사학과 전공</p>
-         <p>전)그린컴퓨터아카데미 편집디자인 교육 수료</p>
-         <p>현)더조은컴퓨터아카데미 스마트웹퍼블리싱 교육 진행 중</p>
-       </div>
-     </div>
+     <section class="profile">
+      <h2>Profile</h2>
+      <div class="feel">
+        <div class="pic">
+          <img src="img/min-background.jpg">
+        </div>
+        <div class="year">
+          <h3>Simple Info</h3>
+          <div class="ye-text">
+            <p><span class="un">Univ.</span>고려대학교 고고미술사학과/한국사학과 전공</p>
+            <p><span class="un">Design.</span>전)그린컴퓨터아카데미 편집디자인 교육 수료</p>
+            <p><span class="un">Coding.</span>현)더조은컴퓨터아카데미 스마트웹퍼블리싱 교육 진행 중</p>
+          </div>
+          <div class="tag">
+            <h3>핵심 성격 키워드</h3>
+            <div class="tag-wrap">
+             <div class="tag-de"><p>#열정신입</p></div>        
+             <div class="tag-de"><p>#웹퍼블리셔</p></div>   
+             <div class="tag-de"><p>#웹디자인</p></div>   
+             <div class="tag-de"><p>#책임감 있는</p></div>   
+             <div class="tag-de"><p>#꼼꼼한</p></div> 
+            </div>  
+          </div>
+        </div>
+        <div class="skills">
+          <h3>보유 기술들</h3>
+          <div class="skill">
+            <div class="skil-1">
+              <img src="img/illur.png" alt="">
+              <img src="img/photoshop.png" alt="">
+              <img src="img/indesign.png" alt="">
+              <img src="img/html.png" alt="">
+              <img src="img/css.png" alt="">
+            </div>
+            <div class="skil-2">
+              <img src="img/js.png" alt="">
+              <img src="img/illur.png" alt="">
+              <img src="img/illur.png" alt="">
+              <img src="img/illur.png" alt="">
+              <img src="img/illur.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End of Profile Section -->
-    <footer></footer>
+  <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/pages/write_form.php"; ?>
  </div>
- <script src="https://code.jquery.com/jquery-3.6.0.js"
- integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="/portfolio-cover/lib/lightslider.js"></script>
  <script src="/portfolio-cover/js/jq.lightslider.js"></script>
  <script src="/portfolio-cover/js/jq.main.js"></script>

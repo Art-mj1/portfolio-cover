@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.center').lightSlider({
+    $('.target').lightSlider({
         item:3,
         loop:false,
         slideMove:2,
