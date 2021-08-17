@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Reset CSS Link -->
- <link rel="stylesheet" href="/portfolio-cover/css/reset.css">
- <!-- Main CSS Link -->
- <link rel="stylesheet" href="/portfolio-cover/css/style.css">
-<!-- Font Awesome Link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <title>Portfolio Writing</title>
-
-</head>
-<body>
- <div id="wrap">
-  
- <section class="contact">
+ <section id="contact">
    <div class="center">
       <div class="tit_box">
         <h2>Leaving message </h2>
-        <p>자유롭게 메시지를 남기는 곳입니다. 궁금한 점, 보완할 부분등 자유롭게 남겨주세요.</p>
+        <p>자유롭게 메시지를 남기는 곳입니다. 궁금한 점, 보완할 부분 등 자유롭게 남겨주세요.</p>
       </div>   
       
       <div class="comm_table comm_center">
@@ -34,6 +16,7 @@
           <form action="/portfolio-cover/pages/write_search.php" class="search_form" name="search_form" method="post">
           <select name="qna_search">
             <option value="tit_search">제목</option>
+            <option value="writer_search">작성자</option>
           </select>
           <input type="text" placeholder="검색어를 입력해 주세요" name="search_txt">
           <button type="button" onclick="search_check()"><i class="fa fa-search"></i></button>
@@ -85,7 +68,9 @@
          <div class="write_tit">
            <label for="write_input">제목</label>
            <input type="text" id="write_input" placeholder="제목을 입력해 주세요."name="write_input">
-         </div>
+           <label for="write_input">작성자명</label>
+           <input type="text" id="write_writer" placeholder="이름을 입력해 주세요."name="write_writer">
+          </div>
          <div class="write_con">
            <textarea placeholder="내용을 입력해 주세요." name="write_con"></textarea>
          </div>
@@ -96,11 +81,10 @@
           <?php } ?>
         </div>
       </div>
-      <!-- End of Write -->
+      <!-- End of Contact -->
     </div>
  </section>
 
- </div>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="/portfolio-cover/js/jq.comm_ajax.js"></script>
  <script>
@@ -118,5 +102,3 @@
       document.write_form.submit();
     }
  </script>
-</body>
-</html>

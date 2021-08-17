@@ -95,47 +95,66 @@
 
 
 /* contact Page Style Code */
-#wrap .contact .comm_center{width:80%;margin:auto;}
+#wrap #contact{width:100%;height:90%;}
+#wrap #contact .comm_center{width:80%;margin:auto;}
 
-#wrap .contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
-#wrap .contact .comm_table li{padding:8px;display:flex;}
-#wrap .contact .comm_table li span{text-align: center;}
-#wrap .contact .comm_table li span:nth-child(1){width:10%;}
-#wrap .contact .comm_table li span:nth-child(2){width:15%}
-#wrap .contact .comm_table li span:nth-child(3){width:60%;}
-#wrap .contact .comm_table li span:nth-child(4){width:15%;}
-#wrap .contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
-#wrap .contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
-#wrap .contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
-#wrap .contact .comm_table li.comm_con span:nth-child(3){justify-content: flex-start; padding-left:15px;}
+#wrap #contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
+#wrap #contact .comm_table li{padding:8px;display:flex;}
 
-.contact .tit_box h2{font-weight:600;margin-top:1%;}
-.contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
-.contact .paging{display:flex;}
-.contact .paging span{width:30px;height:30px;background:#59ab6e;color:#fff;
+#wrap #contact .comm_table li span:nth-child(1){width:10%;}
+#wrap #contact .comm_table li span:nth-child(2){width:15%}
+#wrap #contact .comm_table li span:nth-child(3){width:10%;}
+#wrap #contact .comm_table li span:nth-child(4){width:50%;}
+#wrap #contact .comm_table li span:nth-child(5){width:15%;}
+#wrap #contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
+#wrap #contact .comm_table li.comm_tit span{text-align: center;}
+#wrap #contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
+#wrap #contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
+#wrap #contact .comm_table li.comm_con span:nth-child(4){text-align:flex-start;justify-content: flex-start; padding-left:15px;}
+
+#contact .tit_box h2{font-weight:600;margin-top:1%;}
+#contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
+#contact .paging{display:flex;}
+#contact .paging span{width:30px;height:30px;background:#59ab6e;color:#fff;
   font-size:16px;margin-left:5px;display:flex;justify-content:center;align-items:center;border-radius:5px; border:1px solid #59ab6e;}
-.contact .paging span.num{background:#fff;color:#59ab6e; font-size:14px;}
-.contact .paging span.num.active{background:#59ab6e;color:#fff;}
+#contact .paging span.num{background:#fff;color:#59ab6e; font-size:14px;}
+#contact .paging span.num.active{background:#59ab6e;color:#fff;}
 
-.contact .search_form{display:flex;}
-.contact .search_form select{border:1px solid #59ab6e; background:#59ab6e;
+#contact .search_form{display:flex;}
+#contact .search_form select{border:1px solid #59ab6e; background:#59ab6e;
  color:#fff;outline:0;border-radius:5px 0 0 5px;padding:0 10px;}
-.contact .search_form input{border:1px solid #59ab6e;margin:0 3px; height:30px;}
-.contact .search_form button{font-size:14px;color:#fff;border:1px solid #59ab6e;
+#contact .search_form input{border:1px solid #59ab6e;height:30px;}
+#contact .search_form button{font-size:14px;color:#fff;border:1px solid #59ab6e;
 padding:0 15px;border-radius: 0 5px 5px 0; background:#59ab6e; }
 
-.contact .write{margin-top:50px;}
-.contact .write h4{font-size:14px;margin:10px 20px 10px 0;color:#777;
+#contact .write{margin-top:50px;}
+#contact .write h4{font-size:14px;margin:10px 20px 10px 0;color:#777;
   font-weight:400; border-left:2px solid #59ab6e;padding-left:15px;}
-.contact .write_form{background:#efefef;padding:20px;border-radius:10px;}
-.contact .write_tit{display:flex;justify-content: space-between;}
-.contact .write_tit label{width:20%;background:#59ab6e;color:#fff;
+#contact .write_form{background:#efefef;padding:20px;border-radius:10px;}
+#contact .write_tit,
+#contact .write_writer{display:flex;justify-content: space-between;}
+#contact .write_tit label{width:20%;background:#59ab6e;color:#fff;
   text-align: center;padding:8px 0;}
-.contact .write_tit input{width:calc(80% - 5px);}
-.contact .write_con{width:100%;margin-top:5px;}
-.contact .write_con>textarea{width:100%;;height:150px;font-size:14px;
+#contact .write_tit input{width:calc(60% - 5px);}
+#contact .write_con{width:100%;margin-top:5px;}
+#contact .write_con>textarea{width:100%;;height:150px;font-size:14px;
 font-family: 'Roboto','Noto Sans KR',sans-serif;}
-.contact .write_con textarea::placeholder{color:#ccc;}
-.contact .write_btn{width:100%;height:auto;margin-top:10px;text-align:right;}
-.contact .write_btn button,
-.contact .write_btn a{background:#59ab6e;color:#fff;padding:8px 25px;border-radius:5px;}
+#contact .write_con textarea::placeholder{color:#ccc;}
+#contact .write_btn{width:100%;height:auto;margin-top:10px;text-align:right;}
+#contact .write_btn button,
+#contact .write_btn a{background:#59ab6e;color:#fff;padding:8px 25px;border-radius:5px;}
+
+/* Footer Section */
+#wrap>footer{width:100%;height:16%;background:#aaa;}
+#wrap>footer>h3{font-size:20px;font-weight:500;padding-bottom: 1%;color:#fff;}
+#wrap>footer .contact-me{width:100%;height:20%;display:flex;}
+#wrap>footer .contact-me h3{font-size:15px;text-align:center;color:#fff;}
+#wrap>footer .contact-me .call{width:20%;display:flex;margin-right:5%; align-items: center;}
+#wrap>footer .contact-me a{width: 20%; padding-left: 10%;}
+#wrap>footer .contact-me i{font-size:30px;font-weight:700;padding-left: 80%;color:#fff;}
+#wrap>footer .contact-me i:hover{color:#efbfc2;}
+#wrap>footer .contact-me p{font-size:15px;font-weight:500;padding-left:9%;color:#fff;}
+#wrap>footer .contact-me .e-mail{width:20%;display:flex;align-items: center;color:#fff;}
+#wrap>footer .contact-me .e-mail p{padding-left:14%;color:#fff;}
+#wrap>footer .company_info{width:100%;height:10%;color:#fff;margin-top:1%;}
+#wrap>footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}

@@ -1,6 +1,7 @@
 <?php
 
  $write_input = $_POST['write_input'];
+ $write_writer = $_POST['write_writer'];
  $write_con = addslashes($_POST['write_con']);
  $write_reg = date("Y-m-d");
 
@@ -10,10 +11,12 @@
  
  $sql= "INSERT INTO portfolio_write(
    Portfolio_tit,
+   Portfolio_writer,
    Portfolio_con,
    Portfoilo_reg
  ) VALUES(
   '{$write_input}',
+  '{$write_writer}',
   '{$write_con}',
   '{$write_reg}'
  )";

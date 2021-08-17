@@ -4,6 +4,8 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Font Awesome Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Reset CSS Link -->
  <link rel="stylesheet" href="/portfolio-cover/css/reset.css">
  <!-- Main CSS Link -->
@@ -17,10 +19,10 @@
   
   <header>
    <ul class="nav">
-    <li><a href="#">Home</a></li>
+    <li><a href="#top">Home</a></li>
     <li><a href="#">WORK</a></li>
     <li><a href="#">PROFILE</a></li>
-    <li><a href="#">CONTACT</a></li>
+    <li><a href="#contact">CONTACT</a></li>
    </ul>
   </header>
   <!-- Intro Section -->
@@ -219,6 +221,7 @@
     </section>
     <!-- End of Profile Section -->
   <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/pages/write_form.php"; ?>
+  <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/footer.php"; ?>
  </div>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="/portfolio-cover/lib/lightslider.js"></script>
