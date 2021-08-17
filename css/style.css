@@ -1,5 +1,5 @@
 #wrap{width:100%;height:100vh;margin:auto;max-width:1530px;}
-#wrap>header{width:100%;height:10%;background:#fff;}
+#wrap>header{width:100%;height:10%;background:#fff;z-index:9;}
 #wrap>header>ul{width:80%;height:100%;display:flex; padding-left: 15%; align-items: center; justify-content: center;}
 #wrap>header>ul>li{width:20%;font-size:20px;color:#000;text-align:center;font-family: "ROBOTO";}
 #wrap>header>ul>li>a{width:100%;height:100%;}
@@ -79,11 +79,11 @@
  #wrap .feel .ye-text .un{font-size:18px;font-weight:700; padding-right: 1.5%;}
  #wrap .feel .year .tag{ width: 120%; height: 40%;}
  #wrap .feel .year .tag h3{font-size: 23px;} 
- #wrap .feel .year .tag .tag-wrap{width: 100%; height: 38%;display: flex;
+ #wrap .feel .year .tag .tag-wrap{width: 100%; height: 30%;display: flex;
   align-items: center; justify-content: center;}
  #wrap .year .tag .tag-de{width: 20%; height: 100%; background: rgb(66, 133, 192);
   border-radius: 20px; margin-right: 2%;}
- #wrap .year .tag .tag-de p{ font-size: 20px; color: #fff; margin-top: 11%;
+ #wrap .year .tag .tag-de p{ font-size: 20px; color: #fff; margin-top: 8%;
   font-weight: 700; text-align: center;}
  #wrap .profile .skills{width: 45%; height: 60%; margin-top: 4.7%;}
  #wrap .skills h3 {font-size: 23px; padding: 4% 30%;}
@@ -95,21 +95,22 @@
 
 
 /* contact Page Style Code */
-.comm_center{width:80%;margin:auto;}
+#wrap .contact .comm_center{width:80%;margin:auto;}
 
-.contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
-.contact .comm_table li{padding:8px;display:flex;}
-.contact .comm_table li span{text-align: center;}
-.contact .comm_table li span:nth-child(1){width:10%;}
-.contact .comm_table li span:nth-child(2){width:15%}
-.contact .comm_table li span:nth-child(3){width:50%;}
-.contact .comm_table li span:nth-child(4){width:15%;}
-.contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
-.contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
-.contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
-.contact .comm_table li.comm_con span:nth-child(3){justify-content: flex-start; padding-left:15px;}
+#wrap .contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
+#wrap .contact .comm_table li{padding:8px;display:flex;}
+#wrap .contact .comm_table li span{text-align: center;}
+#wrap .contact .comm_table li span:nth-child(1){width:10%;}
+#wrap .contact .comm_table li span:nth-child(2){width:15%}
+#wrap .contact .comm_table li span:nth-child(3){width:60%;}
+#wrap .contact .comm_table li span:nth-child(4){width:15%;}
+#wrap .contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
+#wrap .contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
+#wrap .contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
+#wrap .contact .comm_table li.comm_con span:nth-child(3){justify-content: flex-start; padding-left:15px;}
 
-.contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;}
+.contact .tit_box h2{font-weight:600;margin-top:1%;}
+.contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
 .contact .paging{display:flex;}
 .contact .paging span{width:30px;height:30px;background:#59ab6e;color:#fff;
   font-size:16px;margin-left:5px;display:flex;justify-content:center;align-items:center;border-radius:5px; border:1px solid #59ab6e;}

@@ -19,8 +19,8 @@
  <section class="contact">
    <div class="center">
       <div class="tit_box">
-        <h2>Community Board</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+        <h2>Leaving message </h2>
+        <p>자유롭게 메시지를 남기는 곳입니다. 궁금한 점, 보완할 부분등 자유롭게 남겨주세요.</p>
       </div>   
       
       <div class="comm_table comm_center">

@@ -24,9 +24,8 @@
    </ul>
   </header>
   <!-- Intro Section -->
-  <section class="">
+  <section class="intro">
    <div class="min-image"></div>
-   
    <div class="min-intro">
     <p>웹퍼블리셔 전문가를 꿈꾸는</p>
     <h2>신입 웹퍼블리셔 박민지입니다.</h2>

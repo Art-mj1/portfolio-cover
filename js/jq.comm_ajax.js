@@ -10,7 +10,7 @@ let current = 1;
 const pgLength = $(".num").length;
 //ajax를 통해 클릭한 넘버링 데이터 불러옴
 function getPage(n){
- const url ="/portfolio-cover/write_ajax.php";
+ const url ="/portfolio-cover/data/write_ajax.php";
  $(".num").removeClass("active");
  $(".num").eq(n - 1).addClass("active");
  $.get(url,{page : n},function(comm_data){

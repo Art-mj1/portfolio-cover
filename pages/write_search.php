@@ -57,7 +57,7 @@
         ?>
         <li class="comm_con">
          <span><?=$search_idx?></span>
-         <span><a href="#"><?=$search_tit?></a></span>
+         <span><a href="/portfolio-cover/pages/write_form.php"><?=$search_tit?></a></span>
          <span><?=$search_con?></span>
          <span><?=$search_reg?></span>
         </li>
@@ -69,5 +69,6 @@
     </div>
  </section>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="/portfolio-cover/js/jq.comm_ajax.js"></script>
 </body>
 </html>
