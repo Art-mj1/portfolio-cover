@@ -16,15 +16,7 @@
 </head>
 <body>
  <div id="wrap">
-  
-  <header>
-   <ul class="nav">
-    <li><a href="#top">Home</a></li>
-    <li><a href="#">WORK</a></li>
-    <li><a href="#">PROFILE</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-   </ul>
-  </header>
+ <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/header.php"; ?>
   <!-- Intro Section -->
   <section class="intro">
    <div class="min-image"></div>

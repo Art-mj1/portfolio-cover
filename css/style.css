@@ -1,9 +1,14 @@
 #wrap{width:100%;height:100vh;margin:auto;max-width:1530px;}
-#wrap>header{width:100%;height:10%;background:#fff;z-index:9;}
-#wrap>header>ul{width:80%;height:100%;display:flex; padding-left: 15%; align-items: center; justify-content: center;}
-#wrap>header>ul>li{width:20%;font-size:20px;color:#000;text-align:center;font-family: "ROBOTO";}
-#wrap>header>ul>li>a{width:100%;height:100%;}
-
+#wrap header{width:100%;height:10%;background:#fff;z-index:9;}
+header .menu{display:flex; align-items: center; justify-content: center; 
+width:90%;height: 100%;}
+header .menu .nav{width:60%;height:100%;display:flex; align-items: center; justify-content: center;}
+header .menu .nav>li{width:20%;font-size:20px;color:#000;text-align:center;font-family: "ROBOTO";}
+header .menu .nav>li>a{width:100%;height:100%;}
+header .login_info{ align-items: center;width: 15%; text-align: center;}
+header .login_info a{padding: 0 15px;color:#555555;font-weight:400;}
+header .login_info a:nth-child(1){border-right:1px solid #212529;}
+header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overflow:hidden;border-radius:50%; padding-left:0;}
 /* Intro Section */
 #wrap .intro{width:100%;height:70%;display:flex;background-color:#E8E6E0;}
 #wrap .intro .min-image{width:40%;height:90%;display:flex;align-items:center;justify-content:center;background:url(../img/min-image.jpg);background-size:contain;background-repeat:no-repeat;margin-top: 3%; margin-left: 6%;}
@@ -95,7 +100,7 @@
 
 
 /* contact Page Style Code */
-#wrap #contact{width:100%;height:90%;}
+#wrap #contact{width:100%;height:90%;margin-top: 1%;}
 #wrap #contact .comm_center{width:80%;margin:auto;}
 
 #wrap #contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
@@ -103,9 +108,9 @@
 
 #wrap #contact .comm_table li span:nth-child(1){width:10%;}
 #wrap #contact .comm_table li span:nth-child(2){width:15%}
-#wrap #contact .comm_table li span:nth-child(3){width:10%;}
+#wrap #contact .comm_table li span:nth-child(3){width:15%;}
 #wrap #contact .comm_table li span:nth-child(4){width:50%;}
-#wrap #contact .comm_table li span:nth-child(5){width:15%;}
+#wrap #contact .comm_table li span:nth-child(5){width:10%;}
 #wrap #contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
 #wrap #contact .comm_table li.comm_tit span{text-align: center;}
 #wrap #contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
@@ -145,16 +150,16 @@ font-family: 'Roboto','Noto Sans KR',sans-serif;}
 #contact .write_btn a{background:#59ab6e;color:#fff;padding:8px 25px;border-radius:5px;}
 
 /* Footer Section */
-#wrap>footer{width:100%;height:16%;background:#aaa;}
-#wrap>footer>h3{font-size:20px;font-weight:500;padding-bottom: 1%;color:#fff;}
-#wrap>footer .contact-me{width:100%;height:20%;display:flex;}
-#wrap>footer .contact-me h3{font-size:15px;text-align:center;color:#fff;}
-#wrap>footer .contact-me .call{width:20%;display:flex;margin-right:5%; align-items: center;}
-#wrap>footer .contact-me a{width: 20%; padding-left: 10%;}
-#wrap>footer .contact-me i{font-size:30px;font-weight:700;padding-left: 80%;color:#fff;}
-#wrap>footer .contact-me i:hover{color:#efbfc2;}
-#wrap>footer .contact-me p{font-size:15px;font-weight:500;padding-left:9%;color:#fff;}
-#wrap>footer .contact-me .e-mail{width:20%;display:flex;align-items: center;color:#fff;}
-#wrap>footer .contact-me .e-mail p{padding-left:14%;color:#fff;}
-#wrap>footer .company_info{width:100%;height:10%;color:#fff;margin-top:1%;}
-#wrap>footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
+footer{width:100%;height:16%;background:#aaa;}
+footer>h3{font-size:20px;font-weight:500;padding-bottom: 1%;color:#fff;}
+footer .contact-me{width:100%;height:20%;display:flex;}
+footer .contact-me h3{font-size:15px;text-align:center;color:#fff;}
+footer .contact-me .call{width:20%;display:flex;margin-right:5%; align-items: center;}
+footer .contact-me a{width: 20%; padding-left: 10%;}
+footer .contact-me i{font-size:30px;font-weight:700;padding-left: 80%;color:#fff;}
+footer .contact-me i:hover{color:#efbfc2;}
+footer .contact-me p{font-size:15px;font-weight:500;padding-left:9%;color:#fff;}
+footer .contact-me .e-mail{width:20%;display:flex;align-items: center;color:#fff;}
+footer .contact-me .e-mail p{padding-left:14%;color:#fff;}
+footer .company_info{width:100%;height:10%;color:#fff;margin-top:1%;}
+footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}

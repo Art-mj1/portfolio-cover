@@ -1,7 +1,7 @@
 <li class="comm_tit">
  <span>번호</span>
- <span>제목</span>
  <span>작성자</span>
+ <span>제목</span>
  <span>내용</span>
  <span>등록일</span>
 </li>
@@ -28,8 +28,8 @@
 
  <li class="comm_con">
  <span><?=$comm_idx?></span>
-  <span><a href="#"><?=$comm_tit?></a></span>
   <span><a href="#"><?=$comm_writer?></a></span>
+  <span><a href="#"><?=$comm_tit?></a></span>
   <span><?=$comm_con?></span>
   <span><?=$comm_reg?></span>
  </li>

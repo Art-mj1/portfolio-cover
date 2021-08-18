@@ -1,0 +1,24 @@
+/* Join Page Style Code */
+#wrap section.join{width:100%;height:40%;margin-top:1%;}
+section.join .form_box{width:100%;height:auto;display:flex;align-items:center;
+ justify-content: center;}
+ section.join .form_box .port_form,
+ section.join .form_box .login_form {background:#efefef; width:50%;padding:20px;border-radius:10px;box-shadow: 0 0 3px #ccc; }
+ 
+ section.join .port_form p,
+ section.join .login_form p{width:100%; height:auto; display:flex;margin: 0 0 5px 0;
+ justify-content: space-between;}
+ section.join .port_form label,
+ section.join .login_form label{width:30%; padding:10px 20px; background:#59ab6e; color:#fff;text-align:center;}
+ section.join .port_form p:first-child input{width:calc(50% - 10px);}
+ section.join .port_form p:first-child button{width:20%; background:#59ab6e;color:#fff;}
+ section.join .port_form input,
+ section.join .login_form input{width:calc(70% - 5px);}
+ section.join .port_form .submit_info,
+ section.join .login_form .submit_info{display:flex;justify-content: space-between;
+ padding:10px 0 0 0;border-top:1px solid #ddd; margin-top:20px; align-items: center;}
+ section.join .port_form .submit_info button,
+ section.join .login_form .submit_info button{background:#59ab6e;color:#fff;padding:10px 30px;}
+ section.join .submit_info span{color:#212529;}
+ section.join .submit_info span a{display:inline-block;padding:10px 20px;
+ background:#59ab6e;color:#fff;}

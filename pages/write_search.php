@@ -1,17 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Font Awesome Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Reset CSS Link -->
+ <link rel="stylesheet" href="/portfolio-cover/css/reset.css">
+ <!-- Main CSS Link -->
+ <link rel="stylesheet" href="/portfolio-cover/css/style.css">
+ <title>Portfolio cover || search</title>
+</head>
+<body>
+ <div id="wrap">
+ <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/header.php"; ?>
  <section id="contact">
    <div class="center">
       <div class="tit_box">
-        <h2>SearchResults</h2>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+        <h2>Message Result</h2>
+        <p>메세지 결과 출력 화면입니다.</p>
       </div>   
       <div class="comm_table comm_center">
        <ul class="comm_row">
         
        <li class="comm_tit">
         <span>번호</span>
-        <span>제목</span>
         <span>작성자</span>
+        <span>제목</span>
         <span>내용</span>
         <span>등록일</span>
        </li>
@@ -38,15 +54,15 @@
         } else{
          while($search_result_row = mysqli_fetch_array($search_result)){
           $search_idx = $search_result_row['Portfolio_idx'];
-          $search_tit = $search_result_row['Portfolio_tit'];
           $search_writer = $search_result_row['Portfolio_writer'];
+          $search_tit = $search_result_row['Portfolio_tit'];
           $search_con = $search_result_row['Portfolio_con'];
           $search_reg = $search_result_row['Portfoilo_reg'];
         ?>
         <li class="comm_con">
          <span><?=$search_idx?></span>
-         <span><a href="#"><?=$search_tit?></a></span>
          <span><a href="#"><?=$search_writer?></a></span>
+         <span><a href="#"><?=$search_tit?></a></span>
          <span><?=$search_con?></span>
          <span><?=$search_reg?></span>
         </li>
@@ -57,6 +73,8 @@
       </div>
     </div>
  </section>
+ <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/footer.php"; ?>
+ </div>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <script src="/portfolio-cover/js/jq.comm_ajax.js"></script>
-
+</body>
+</html>
