@@ -28,7 +28,6 @@
         <span>번호</span>
         <span>작성자</span>
         <span>제목</span>
-        <span>내용</span>
         <span>등록일</span>
        </li>
        <?php
@@ -56,14 +55,12 @@
           $search_idx = $search_result_row['Portfolio_idx'];
           $search_writer = $search_result_row['Portfolio_writer'];
           $search_tit = $search_result_row['Portfolio_tit'];
-          $search_con = $search_result_row['Portfolio_con'];
           $search_reg = $search_result_row['Portfoilo_reg'];
         ?>
         <li class="comm_con">
          <span><?=$search_idx?></span>
          <span><a href="#"><?=$search_writer?></a></span>
-         <span><a href="#"><?=$search_tit?></a></span>
-         <span><?=$search_con?></span>
+         <span><a href="/portfolio-cover/pages/write_detail.php?detail_idx=<?=$search_idx?>"><?=$search_tit?></a></span>
          <span><?=$search_reg?></span>
         </li>
         <?php } } ?>

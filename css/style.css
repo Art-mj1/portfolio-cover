@@ -73,9 +73,9 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
  border: 1px solid #efbfc2; font-size: 15px; color: #fff;}
 
  /* Profile Section */
- #wrap .profile{width:100%;height:65%;background:#e0dbfb;}
- #wrap .profile h2{font-size:40px;text-align: center;border-bottom: 1px solid #000;padding: 1%;}
- #wrap .profile .feel{width:100%;height:100%;display:flex;}
+ #wrap #profile{width:100%;height:65%;background:#e0dbfb;}
+ #wrap #profile h2{font-size:40px;text-align: center;border-bottom: 1px solid #000;padding: 1%;}
+ #wrap #profile .feel{width:100%;height:100%;display:flex;}
  #wrap .feel .pic{padding: 3%; width:30%; height: 80%; margin: 1% 1%;}
  #wrap .feel .pic img{width:100%;height:90%;}
  #wrap .feel .year{ margin-top: 6%; width: 60%; height: 70%;}
@@ -90,7 +90,7 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
   border-radius: 20px; margin-right: 2%;}
  #wrap .year .tag .tag-de p{ font-size: 20px; color: #fff; margin-top: 8%;
   font-weight: 700; text-align: center;}
- #wrap .profile .skills{width: 45%; height: 60%; margin-top: 4.7%;}
+ #wrap #profile .skills{width: 45%; height: 60%; margin-top: 4.7%;}
  #wrap .skills h3 {font-size: 23px; padding: 4% 30%;}
  #wrap .skills .skill{width: 100%; height: 100%; display: flex; flex-direction: column;}
  #wrap .skill .skil-1, 
@@ -108,14 +108,13 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
 
 #wrap #contact .comm_table li span:nth-child(1){width:10%;}
 #wrap #contact .comm_table li span:nth-child(2){width:15%}
-#wrap #contact .comm_table li span:nth-child(3){width:15%;}
-#wrap #contact .comm_table li span:nth-child(4){width:50%;}
-#wrap #contact .comm_table li span:nth-child(5){width:10%;}
+#wrap #contact .comm_table li span:nth-child(3){width:55%;}
+#wrap #contact .comm_table li span:nth-child(4){width:10%;}
 #wrap #contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
 #wrap #contact .comm_table li.comm_tit span{text-align: center;}
 #wrap #contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
 #wrap #contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
-#wrap #contact .comm_table li.comm_con span:nth-child(4){text-align:flex-start;justify-content: flex-start; padding-left:15px;}
+#wrap #contact .comm_table li.comm_con span:nth-child(3){text-align:flex-start; padding-left:15px;}
 
 #contact .tit_box h2{font-weight:600;margin-top:1%;}
 #contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
@@ -140,7 +139,7 @@ padding:0 15px;border-radius: 0 5px 5px 0; background:#59ab6e; }
 #contact .write_writer{display:flex;justify-content: space-between;}
 #contact .write_tit label{width:20%;background:#59ab6e;color:#fff;
   text-align: center;padding:8px 0;}
-#contact .write_tit input{width:calc(60% - 5px);}
+#contact .write_tit input{width:calc(80% - 5px);}
 #contact .write_con{width:100%;margin-top:5px;}
 #contact .write_con>textarea{width:100%;;height:150px;font-size:14px;
 font-family: 'Roboto','Noto Sans KR',sans-serif;}

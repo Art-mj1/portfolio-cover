@@ -2,21 +2,24 @@
 
  $write_input = $_POST['write_input'];
  $write_writer = $_POST['write_writer'];
+ $write_pass = addslashes($_POST['write_pass']);
  $write_con = addslashes($_POST['write_con']);
  $write_reg = date("Y-m-d");
+
 
  //echo $write_input, $write_con, $write_reg;
 
  include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
- 
  $sql= "INSERT INTO portfolio_write(
    Portfolio_tit,
    Portfolio_writer,
+   Portfolio_pass,
    Portfolio_con,
    Portfoilo_reg
  ) VALUES(
   '{$write_input}',
   '{$write_writer}',
+  '{$write_pass}',
   '{$write_con}',
   '{$write_reg}'
  )";

@@ -2,7 +2,6 @@
  <span>번호</span>
  <span>작성자</span>
  <span>제목</span>
- <span>내용</span>
  <span>등록일</span>
 </li>
 <?php
@@ -20,17 +19,15 @@
   $comm_result = mysqli_query($dbConn, $sql);
   while($comm_row = mysqli_fetch_array($comm_result)){
   $comm_idx= $comm_row['Portfolio_idx'];
-  $comm_tit= $comm_row['Portfolio_tit'];
   $comm_writer= $comm_row['Portfolio_writer'];
-  $comm_con= $comm_row['Portfolio_con'];
+  $comm_tit= $comm_row['Portfolio_tit'];
   $comm_reg= $comm_row['Portfoilo_reg'];
  ?>
 
  <li class="comm_con">
  <span><?=$comm_idx?></span>
-  <span><a href="#"><?=$comm_writer?></a></span>
-  <span><a href="#"><?=$comm_tit?></a></span>
-  <span><?=$comm_con?></span>
+  <span><a href="/portfolio-cover/pages/write_pass.php?Portfolio_idx=<?=$comm_idx?>"><?=$comm_writer?></a></span>
+  <span><a href="/portfolio-cover/pages/write_detail.php?detail_idx=<?=$comm_idx?>"><?=$comm_tit?></a></span>
   <span><?=$comm_reg?></span>
  </li>
 <?php } ?>

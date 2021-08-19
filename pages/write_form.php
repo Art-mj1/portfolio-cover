@@ -70,7 +70,10 @@
            <input type="text" id="write_input" placeholder="제목을 입력해 주세요."name="write_input">
            <label for="write_input">작성자명</label>
            <input type="text" id="write_writer" placeholder="이름을 입력해 주세요."name="write_writer">
+           <label for="write_input">비밀번호</label>
+           <input type="text" id="write_pass" placeholder="비밀번호를 입력해 주세요."name="write_pass">
           </div>
+
          <div class="write_con">
            <textarea placeholder="내용을 입력해 주세요." name="write_con"></textarea>
          </div>

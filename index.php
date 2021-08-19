@@ -166,7 +166,7 @@
   </section>
     <!-- End of Graphic Section -->
     <!--Profile Section--> 
-     <section class="profile">
+     <section id="profile">
       <h2>Profile</h2>
       <div class="feel">
         <div class="pic">

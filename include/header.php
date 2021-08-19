@@ -12,7 +12,7 @@
     <ul class="nav">
       <li><a href="/portfolio-cover/index.php">Home</a></li>
       <li><a href="#">WORK</a></li>
-      <li><a href="#">PROFILE</a></li>
+      <li><a href="#profile">PROFILE</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
     <div class="login_info">
