@@ -26,8 +26,8 @@
 
  <li class="comm_con">
  <span><?=$comm_idx?></span>
-  <span><a href="/portfolio-cover/pages/write_pass.php?Portfolio_idx=<?=$comm_idx?>"><?=$comm_writer?></a></span>
-  <span><a href="/portfolio-cover/pages/write_detail.php?detail_idx=<?=$comm_idx?>"><?=$comm_tit?></a></span>
+  <span><a href="#"><?=$comm_writer?></a></span>
+  <span><a href="/portfolio-cover/pages/write_pass.php?Portfolio_idx=<?=$comm_idx?>"><?=$comm_tit?></a></span>
   <span><?=$comm_reg?></span>
  </li>
 <?php } ?>

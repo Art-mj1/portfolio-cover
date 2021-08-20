@@ -25,7 +25,7 @@
   } else {
    echo "
   <script>
-   location.href='/portfolio-cover/pages/write_detail.php?detail_idx=<?=$pass_val?>';
+   location.href='/portfolio-cover/pages/write_detail.php?detail_idx=$pass_val';
   </script>
   ";
   }

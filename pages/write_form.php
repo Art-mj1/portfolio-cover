@@ -97,11 +97,18 @@
         return;
       }
 
+      if(!document.write_form.write_writer.value){
+        alert('이름을 입력해 주세요.'); 
+        return;
+      }
+      if(!document.write_form.write_pass.value){
+        alert('비밀번호을 입력해 주세요.'); 
+        return;
+      }
       if(!document.write_form.write_con.value){
         alert('내용을 입력해 주세요.'); 
         return;
       }
-
       document.write_form.submit();
     }
  </script>

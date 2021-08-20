@@ -30,7 +30,7 @@
    $detail_writer = $detail_row['Portfolio_writer'];
    $detail_con = $detail_row['Portfolio_con'];
    $detail_reg = $detail_row['Portfoilo_reg'];
-   mysqli_query($dbConn, $sql);
+  
    ?>
     
    <div class="tit_box">
@@ -51,7 +51,7 @@
       <div class="write_btn">
        
        <a href="/portfolio-cover/index.php">돌아가기</a>
-        <a href=javascript:;" id="update">수정</a>
+        <a href="/portfolio-cover/php/write_update.php">수정</a>
      </div>
      </form>
 

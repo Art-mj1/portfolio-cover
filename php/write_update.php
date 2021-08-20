@@ -2,7 +2,7 @@
 
 
 $detail_idx = $_GET['detail_idx'];
-$detail_writer=$_GET['detail_writer'];
+$detail_writer = $_GET['detail_writer'];
 $detail_input = $_POST['write_input'];
 $detail_con = addslashes($_POST['write_con']);
 
