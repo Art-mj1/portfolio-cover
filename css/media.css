@@ -1,0 +1,29 @@
+@media screen and (max-width:1436px){
+ #wrap .intro .min-image{margin-top:8%;}
+ #wrap #profile .feel{height:90%;}
+ footer .contact-me .call{width:25%;}
+ footer .contact-me .e-mail{width:25%;}
+ footer .contact-me a{padding-left:0;}
+ #wrap .feel .year .tag .tag-wrap{width:105%;height:30%;}
+ #wrap .year .tag .tag-de p{font-size:19px;}
+ #wrap .feel .pic{height:75%;}
+ #wrap .intro .min-intro>h2{white-space: nowrap;}
+}
+@media screen and (max-width:1259px){
+ header .menu .nav{width:65%;padding-left:2%;}
+ #wrap .main .ma-one .show{margin-top:2%;height: 85%;}
+ #wrap .main .ma-two .show{height:85%; padding-top: 2%;}
+ #wrap .main-two .ma-three .show{height: 85%;padding-top:1%;margin-top:1%;}
+ #wrap .main-two .ma-four .show{height:85%;padding-top:1%;}
+ #wrap .graphic .target .details{margin-top:7%;}
+ #wrap .feel .pic{width:32%;}
+ #wrap .feel .year .ye-text{font-size:19px; line-height: 2;}
+ #wrap .feel .year .tag{width:130%;}
+ #wrap .intro{margin-top:2%;}
+ #wrap .intro .min-image{margin-top:10%; height: 76%; background-size: cover;}
+ #wrap .graphic .all .target .pe{padding:0 40px;}
+ #wrap .graphic .all .target .pe .con{height:18%;}
+ #wrap .graphic .target .details{margin-top:7%;}
+ #wrap .show .text .tit{font-size:38px;}
+ #wrap #profile .skills{height:50%;}
+}

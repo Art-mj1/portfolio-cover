@@ -10,6 +10,8 @@
  <link rel="stylesheet" href="/portfolio-cover/css/reset.css">
  <!-- Main CSS Link -->
  <link rel="stylesheet" href="/portfolio-cover/css/style.css">
+  <!-- Media Link -->
+  <link rel="stylesheet" href="/portfolio-cover/css/media.css">
   <!-- Library CSS Link -->
   <link rel="stylesheet" href="/portfolio-cover/lib/lightslider.css">
  <title>Portfolio cover</title>
@@ -44,7 +46,7 @@
         <div class="text">
           <div class="number">02</div>
           <div class="tit">Database Project</div>
-          <div class="comment">해피바스 메인페이지의 이미지만 차용하여 구조를 직접 재구성해보았습니다.</div>
+          <div class="comment">100% 데이터베이스만을 활용하여 쇼핑몰인 zay를 만들어보았습니다. </div>
           <div class="btns">
             <button type="button" class="one"><a href="#">자세히 보기</a></button>
           </div>
@@ -202,7 +204,7 @@
             </div>
             <div class="skil-2">
               <img src="img/js.png" alt="">
-              <img src="img/illur.png" alt="">
+              <img src="img/database.png" alt="">
               <img src="img/illur.png" alt="">
               <img src="img/illur.png" alt="">
               <img src="img/illur.png" alt="">

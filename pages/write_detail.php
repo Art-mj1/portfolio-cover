@@ -51,7 +51,7 @@
       <div class="write_btn">
        
        <a href="/portfolio-cover/index.php">돌아가기</a>
-        <a href="/portfolio-cover/php/write_update.php">수정</a>
+        <a href="javascript:;" id="update">수정</a>
      </div>
      </form>
 
@@ -59,7 +59,12 @@
    <!-- End of write -->
   </div>
  </section>
-
+ <script>
+    const upBtn = document.querySelector('#update');
+    upBtn.addEventListener("click", function(){
+      document.write_form.submit();
+    });
+  </script>
  <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/footer.php"; ?>
  </div>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -21,22 +21,22 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
 #wrap .main{width:100%;height:100%;background-color:#adc1cc;}
 #wrap .main .ma-one{width:100%;height:50%;display:flex;padding:3.5%;}
 #wrap .main .ma-one .image{width:50%;height:100%;background:url(../img/renewal-1.jpg);background-size:contain;background-repeat:no-repeat;margin-left: 4%;}
-#wrap .main .ma-one .show{width:30%;height:100%;}
+#wrap .main .ma-one .show{width:30%;height:90%;margin-left:4%;}
 #wrap .main .show .text{width:100%;height:100%;padding:4%;text-align:center;border:1px solid #eee;}
 #wrap .show .text .number{font-size:30px;color:#fff;border-bottom:1px solid #fff;padding:1%;}
-#wrap .show .text .tit{font-size:40px;font-weight:900;color:#fff;line-height:2;}
+#wrap .show .text .tit{font-size:40px;font-weight:900;color:#fff;line-height:2;white-space: nowrap;}
 #wrap .show .text .comment{font-size:20px;color:#fff;font-weight:500;}
 #wrap .show  .one{background: #fff;font-size:15px; padding: 8px 25px;
  margin-top: 5%; border-radius: 30px;}
 #wrap .main .ma-two{width:100%;height:50%;display:flex;padding:3%;}
-#wrap .main .ma-two .image{width:50%;height:100%;background:url(../img/whats-next.png);margin-left: 8%;background-size:contain;background-repeat: no-repeat;}
-#wrap .main .ma-two .show{margin-left:7%;width:30%;height:100%;}
+#wrap .main .ma-two .image{width:50%;height:100%;background:url(../img/zay-image.png);margin-left: 12%;background-size:contain;background-repeat: no-repeat;}
+#wrap .main .ma-two .show{margin-top:2%;margin-left:9.5%;width:30%;height:90%;}
 
 /* Main-Two Section */
 #wrap .main-two{width:100%;height:100%;background-color:#e8e6c0;}
 #wrap .main-two .ma-three{width:100%;height:50%;display:flex;padding:3%;}
-#wrap .main-two .ma-three .image{width: 48%;height:100%;background:url(../img/whats-next.png);background-size:contain;background-repeat: no-repeat; margin-left: 5%;}
-#wrap .main-two .ma-three .show{width:30%;height:100%; margin-left: 8%;}
+#wrap .main-two .ma-three .image{width: 48%;height:100%;background:url(../img/gocamp.png);background-size:contain;background-repeat: no-repeat; margin-left: 5%;}
+#wrap .main-two .ma-three .show{width:30%;height:90%; margin-left: 4%;}
 #wrap .main-two .show .text{width:100%;height:100%;padding:4%;text-align:center;border:1px solid #000;}
 #wrap .ma-three .show .text .number{font-size:30px;color:#000;border-bottom:1px solid #000;padding:1%;}
 #wrap .ma-three .show .text .tit{font-size:40px;font-weight:900;color:#000;line-height:2;}
@@ -45,7 +45,7 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
  margin-top: 5%; border-radius: 30px;}
  #wrap .main-two .ma-four{width:100%;height:50%;display:flex;padding:3%;}
 #wrap .main-two .ma-four .image{width:50%;height:100%;background:url(../img/whats-next.png);background-size:contain;background-repeat: no-repeat; margin-left: 16%;}
-#wrap .main-two .ma-four .show{width:30%;height:100%;margin-left:6.5%;}
+#wrap .main-two .ma-four .show{width:30%;height:90%;margin-left:6.5%;}
 #wrap .main-two .show .text{width:100%;height:100%;padding:4%;text-align:center;border:1px solid #000;}
 #wrap .ma-four .show .text .number{font-size:30px;color:#000;border-bottom:1px solid #000;padding:1%;}
 #wrap .ma-four .show .text .tit{font-size:40px;font-weight:900;color:#000;line-height:2;}
