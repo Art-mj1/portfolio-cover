@@ -11,7 +11,7 @@ header .login_info a:nth-child(1){border-right:1px solid #212529;}
 header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overflow:hidden;border-radius:50%; padding-left:0;}
 /* Intro Section */
 #wrap .intro{width:100%;height:70%;display:flex;background-color:#E8E6E0;}
-#wrap .intro .min-image{width:40%;height:90%;display:flex;align-items:center;justify-content:center;background:url(../img/min-image.jpg);background-size:contain;background-repeat:no-repeat;margin-top: 3%; margin-left: 6%;}
+#wrap .intro .min-image{width:40%;height:90%;display:flex;align-items:center;justify-content:center;background:url(../img/min-image.jpg);background-size:cover;background-repeat:no-repeat;margin-top: 3%; margin-left: 6%;}
 #wrap .intro .min-intro{width:40%;height:100%;padding:4%;text-align:center;display: flex;
  flex-direction: column; align-items: center; justify-content: center;}
 #wrap .intro .min-intro>p{font-size:15px;color:#000;line-height:3.5;}
@@ -38,17 +38,18 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
 #wrap .main-two .ma-three .image{width: 48%;height:100%;background:url(../img/gocamp.png);background-size:contain;background-repeat: no-repeat; margin-left: 5%;}
 #wrap .main-two .ma-three .show{width:30%;height:90%; margin-left: 4%;}
 #wrap .main-two .show .text{width:100%;height:100%;padding:4%;text-align:center;border:1px solid #000;}
+#wrap .main-two .show .text .tit{font-size:40px;font-weight:900;color:#000;line-height:2;}
 #wrap .ma-three .show .text .number{font-size:30px;color:#000;border-bottom:1px solid #000;padding:1%;}
-#wrap .ma-three .show .text .tit{font-size:40px;font-weight:900;color:#000;line-height:2;}
+
 #wrap .ma-three .show .text .comment{font-size:20px;color:#000;font-weight:500;}
 #wrap .ma-three .show  .one{background: #fff;font-size:15px; padding: 8px 25px;
  margin-top: 5%; border-radius: 30px;}
  #wrap .main-two .ma-four{width:100%;height:50%;display:flex;padding:3%;}
-#wrap .main-two .ma-four .image{width:50%;height:100%;background:url(../img/whats-next.png);background-size:contain;background-repeat: no-repeat; margin-left: 16%;}
+#wrap .main-two .ma-four .image{width:50%;height:100%;background:url(../img/gocamp.png);background-size:contain;background-repeat: no-repeat; margin-left: 16%;}
 #wrap .main-two .ma-four .show{width:30%;height:90%;margin-left:6.5%;}
 #wrap .main-two .show .text{width:100%;height:100%;padding:4%;text-align:center;border:1px solid #000;}
 #wrap .ma-four .show .text .number{font-size:30px;color:#000;border-bottom:1px solid #000;padding:1%;}
-#wrap .ma-four .show .text .tit{font-size:40px;font-weight:900;color:#000;line-height:2;}
+
 #wrap .ma-four .show .text .comment{font-size:20px;color:#000;font-weight:500;}
 #wrap .ma-four .show  .one{background: #fff;font-size:15px; padding: 8px 25px;
  margin-top: 5%; border-radius: 30px;}
@@ -64,14 +65,18 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
 #wrap .graphic .target h2{font-size: 40px; color: palevioletred;
  text-align: center; border-bottom: 1px solid #efbfc2;}
 #wrap .graphic .target .imgs{margin-top: 10%; width: 100%; height: 51%;}
+#wrap .graphic .target .homepi{margin-top: 9%; width: 100%; height: 51%;}
 #wrap .graphic .target .imgs img{width:100%;height:100%; object-fit: cover;}
 #wrap .graphic .all .target .pe .con{height:15%; margin-top: 5%;}
 #wrap .graphic .target .con h3{font-size:20px;color:rgba(206, 25, 125, 0.897);
- text-align:center;}
+ text-align:center;  white-space: nowrap;}
 #wrap .graphic .target .con p{font-size:15px;text-align:center; padding-top: 3%;font-weight:700;color:#000;}
 #wrap .graphic .target .details{width: 40%; height: 6%; background: #efbfc2;
  border: 1px solid #efbfc2; font-size: 15px; color: #fff;}
-
+ #wrap .graphic .target .buttons{display:flex; align-items: center;justify-content: center;
+ width: 100%; height: 6%;}
+ #wrap .graphic .target .buttons a{color:#fff;font-size:15px;}
+ #wrap .graphic .target .buttons .veg{background:#efbfc2;height: 100%;margin: 1%;}
  /* Profile Section */
  #wrap #profile{width:100%;height:65%;background:#e0dbfb;}
  #wrap #profile h2{font-size:40px;text-align: center;border-bottom: 1px solid #000;padding: 1%;}
@@ -80,7 +85,7 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
  #wrap .feel .pic img{width:100%;height:90%;}
  #wrap .feel .year{ margin-top: 6%; width: 60%; height: 70%;}
  #wrap .feel .year h3{font-size: 23px; padding: 2% 2%; margin-bottom: 1%;} 
- #wrap .feel .year .ye-text{font-size: 20px; line-height: 2.3; padding: 2% 2%;} 
+ #wrap .feel .year .ye-text{font-size: 20px; line-height: 2.3; padding: 2% 2%;white-space: nowrap;} 
  #wrap .feel .ye-text .un{font-size:18px;font-weight:700; padding-right: 1.5%;}
  #wrap .feel .year .tag{ width: 120%; height: 40%;}
  #wrap .feel .year .tag h3{font-size: 23px;} 
@@ -97,48 +102,55 @@ header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overfl
  #wrap .skill .skil-2
  {width: 90%; height: 22%; display: flex; padding: 0.5%;}
  #wrap .skill img{width: 17%; margin: 0.5% 1%; height: 100%;}
-
+#wrap #profile .mo-skills{display:none;width: 45%; height: 55%;}
+ #wrap .mo-skills h3 {font-size: 23px; padding: 4% 30%;}
+ #wrap .mo-skills .mo-skill{width: 100%; height: 20%; display: flex;}
+ #wrap .mo-skill .mo-skil-1, 
+ #wrap .mo-skill .mo-skil-2
+ {width: 90%; height: 90%; display: flex; padding: 0.5%;}
+ #wrap .mo-skill img{width: 17%; margin: 0.5% 1%; height: 100%;}
 
 /* contact Page Style Code */
-#wrap #contact{width:100%;height:90%;margin-top: 1%;}
+#wrap #contact{width:100%;height:90%;margin-top: 1%;background:#fff;}
 #wrap #contact .comm_center{width:80%;margin:auto;}
 
-#wrap #contact .comm_table{background:#efefef;padding:20px; border-radius: 10px;}
+#wrap #contact .comm_table{background:#fff;border:20px solid #ffeded;padding:20px;border-radius: 10px;}
 #wrap #contact .comm_table li{padding:8px;display:flex;}
 
 #wrap #contact .comm_table li span:nth-child(1){width:10%;}
 #wrap #contact .comm_table li span:nth-child(2){width:15%}
 #wrap #contact .comm_table li span:nth-child(3){width:55%;}
 #wrap #contact .comm_table li span:nth-child(4){width:10%;}
-#wrap #contact .comm_table li.comm_tit{background:#59ab6e;color:#fff;}
+#wrap #contact .comm_table li.comm_tit{background:#fec8be;color:#fff;}
 #wrap #contact .comm_table li.comm_tit span{text-align: center;}
-#wrap #contact .comm_table li.comm_con{border-bottom:1px solid #fff;}
-#wrap #contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;}
+#wrap #contact .comm_table li.comm_con{border-bottom:1px solid #fec8be;}
+#wrap #contact .comm_table li.comm_con span{display:flex; align-items:center;justify-content: center;
+white-space:nowrap;}
 #wrap #contact .comm_table li.comm_con span:nth-child(3){text-align:flex-start; padding-left:15px;}
 
 #contact .tit_box h2{font-weight:600;margin-top:1%;}
 #contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
 #contact .paging{display:flex;}
-#contact .paging span{width:30px;height:30px;background:#59ab6e;color:#fff;
-  font-size:16px;margin-left:5px;display:flex;justify-content:center;align-items:center;border-radius:5px; border:1px solid #59ab6e;}
-#contact .paging span.num{background:#fff;color:#59ab6e; font-size:14px;}
-#contact .paging span.num.active{background:#59ab6e;color:#fff;}
+#contact .paging span{width:30px;height:30px;background:#fec8be;color:#fff;
+  font-size:16px;margin-left:5px;display:flex;justify-content:center;align-items:center;border-radius:5px; border:1px solid #fec8be;}
+#contact .paging span.num{background:#fff;color:#fec8be; font-size:14px;}
+#contact .paging span.num.active{background:#fec8be;color:#fff;}
 
 #contact .search_form{display:flex;}
-#contact .search_form select{border:1px solid #59ab6e; background:#59ab6e;
+#contact .search_form select{border:1px solid #fec8be; background:#fec8be;
  color:#fff;outline:0;border-radius:5px 0 0 5px;padding:0 10px;}
-#contact .search_form input{border:1px solid #59ab6e;height:30px;}
-#contact .search_form button{font-size:14px;color:#fff;border:1px solid #59ab6e;
-padding:0 15px;border-radius: 0 5px 5px 0; background:#59ab6e; }
+#contact .search_form input{border:1px solid #fec8be;height:30px;}
+#contact .search_form button{font-size:14px;color:#fff;border:1px solid #fec8be;
+padding:0 15px;border-radius: 0 5px 5px 0; background:#fec8be; }
 
 #contact .write{margin-top:50px;}
 #contact .write h4{font-size:14px;margin:10px 20px 10px 0;color:#777;
-  font-weight:400; border-left:2px solid #59ab6e;padding-left:15px;}
-#contact .write_form{background:#efefef;padding:20px;border-radius:10px;}
+  font-weight:400; border-left:2px solid #fec8be;padding-left:15px;}
+#contact .write_form{background:#ffeded;padding:20px;border-radius:10px;}
 #contact .write_tit,
 #contact .write_writer{display:flex;justify-content: space-between;}
-#contact .write_tit label{width:20%;background:#59ab6e;color:#fff;
-  text-align: center;padding:8px 0;}
+#contact .write_tit label{width:20%;background:#fec8be;color:#fff;
+  text-align: center;padding:5px 0;}
 #contact .write_tit input{width:calc(80% - 5px);}
 #contact .write_con{width:100%;margin-top:5px;}
 #contact .write_con>textarea{width:100%;;height:150px;font-size:14px;
@@ -146,17 +158,17 @@ font-family: 'Roboto','Noto Sans KR',sans-serif;}
 #contact .write_con textarea::placeholder{color:#ccc;}
 #contact .write_btn{width:100%;height:auto;margin-top:10px;text-align:right;}
 #contact .write_btn button,
-#contact .write_btn a{background:#59ab6e;color:#fff;padding:8px 25px;border-radius:5px;}
+#contact .write_btn a{background:#fec8be;color:#fff;padding:8px 25px;border-radius:5px;}
 
 /* Footer Section */
-footer{width:100%;height:16%;background:#aaa;}
+footer{width:100%;height:16%;background:#E6C4BA;}
 footer>h3{font-size:20px;font-weight:500;padding-bottom: 1%;color:#fff;}
 footer .contact-me{width:100%;height:20%;display:flex;}
 footer .contact-me h3{font-size:15px;text-align:center;color:#fff;}
 footer .contact-me .call{width:20%;display:flex;margin-right:5%; align-items: center;}
 footer .contact-me a{width: 20%; padding-left: 10%;}
 footer .contact-me i{font-size:30px;font-weight:700;padding-left: 80%;color:#fff;}
-footer .contact-me i:hover{color:#efbfc2;}
+footer .contact-me i:hover{color:#000;}
 footer .contact-me p{font-size:15px;font-weight:500;padding-left:9%;color:#fff;}
 footer .contact-me .e-mail{width:20%;display:flex;align-items: center;color:#fff;}
 footer .contact-me .e-mail p{padding-left:14%;color:#fff;}
