@@ -20,17 +20,17 @@
   <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/header.php"; ?>
   <section id="contact">
    <?php
-   $pass_idx = $_GET['Portfolio_idx'];
+   $search_idx = $_GET['detail_idx'];
    include $_SERVER["DOCUMENT_ROOT"]."/connect/db_conn.php";
-   $sql = "SELECT * FROM portfolio_write WHERE Portfolio_idx='{$pass_idx}'";
+   $sql = "SELECT * FROM portfolio_write WHERE Portfolio_idx='{$search_idx}'";
 
-   $pass_result = mysqli_query($dbConn, $sql);
-   $pass_row = mysqli_fetch_array($pass_result);
+   $search_result = mysqli_query($dbConn, $sql);
+   $search_row = mysqli_fetch_array($search_result);
 
-   $pass_tit = $pass_row['Portfolio_tit'];
-   $pass_pass = $pass_row['Portfolio_pass'];
-   $pass_con = $pass_row['Portfolio_con'];
-   $pass_reg = $pass_row['Portfoilo_reg'];
+   $search_tit = $search_row['Portfolio_tit'];
+   $search_pass = $search_row['Portfolio_pass'];
+   $search_con = $search_row['Portfolio_con'];
+   $search_reg = $search_row['Portfoilo_reg'];
 
    ?>
    <div class="center">
@@ -39,11 +39,11 @@
      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est
       laborum.</p>
     </div>
-    <form class="write_pass" action="/portfolio-cover/php/pass_check.php?check_idx=<?=$pass_idx?>" name="write_pass"
-     method="post">
+    <form class="search_pass" action="/portfolio-cover/php/search_check.php?check_idx=<?=$search_idx?>"
+     name="search_pass" method="post">
      <div class="pass">
       <label for="pass_name">비밀번호</label>
-      <input type="text" name="pass_input" id="write_pass" placeholder="비밀번호를 입력해주세요">
+      <input type="text" name="search_input" id="write_pass" placeholder="비밀번호를 입력해주세요">
      </div>
      <div class="pass_check">
       <button type="submit">확인</button>

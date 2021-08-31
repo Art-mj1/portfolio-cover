@@ -19,6 +19,7 @@ a {
 
 body {
  font-size: 14px;
+ color: #003946;
 }
 textarea {
  resize: none;
@@ -44,4 +45,9 @@ input,button,textarea{outline:0;border-radius: 0; border:0; padding:10px;
 .tit_box p {
  font-size: 18px;
  font-weight: 300;text-align:center;
+}
+.center{
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
 }
