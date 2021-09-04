@@ -16,6 +16,7 @@
  <link rel="stylesheet" href="/portfolio-cover/css/media.css">
  <!-- Library CSS Link -->
  <link rel="stylesheet" href="/portfolio-cover/lib/lightslider.css">
+ <link rel="stylesheet" href="/portfolio-cover/lib/animate/animate.css">
  <title>Portfolio cover</title>
 </head>
 
@@ -40,12 +41,12 @@
   <section class="main" id="main1">
    <div class="center">
 
-    <div class="ma-one">
+    <div class="ma-one fadeInRight wow">
      <div class="image">
       <img src="/portfolio-cover/img/happybath.png" alt="">
 
      </div>
-     <div class="show">
+     <div class="show first">
       <div class="text">
        <div class="number">01</div>
        <div class="tit">Renewal Project</div>
@@ -55,8 +56,8 @@
       </div>
      </div>
     </div>
-    <div class="ma-one">
-     <div class="show">
+    <div class="ma-one fadeInLeft wow">
+     <div class="show second">
       <div class="text">
        <div class="number">02</div>
        <div class="tit">Database Project</div>
@@ -76,7 +77,8 @@
   <!--Main-Two section-->
   <section class="main main-two" id="main2">
    <div class="center">
-    <div class="ma-one">
+    <div class="ma-one fadeInLeft wow" data-wow-delay="0.4s">
+
      <div class="image">
       <img src="/portfolio-cover/img/gocamp.png" alt="">
      </div>
@@ -85,23 +87,25 @@
        <div class="number">03</div>
        <div class="tit">API Proiect</div>
        <div class="comment">구글 맵을 활용하여 반경 10km, 20km , 30km 내의 캠핑장을 조회하였습니다.</div>
-       <button type="button" class="one"><a href="#" target="_blank">자세히 보기</a></button>
+       <button type="button" class="one"><a href="https://www.dabipyeung.com/APIProject/minji/lbcamp
+        " target="_blank">자세히 보기</a></button>
       </div>
      </div>
     </div>
-    <div class="ma-one">
+    <div class="ma-one fadeInRight wow" data-wow-delay="0.6s">
      <div class="show">
       <div class="text">
        <div class="number">04</div>
-       <div class="tit">Database</div>
-       <div class="comment">해피바스 메인페이지의 이미지만 차용하여 구조를 직접 재구성해보았습니다.</div>
+       <div class="tit">React</div>
+       <div class="comment">리액트를 이용하여 음식소개 및 관련정보를 담은 상세페이지를 만들었습니다.</div>
        <div class="btns">
-        <button type="button" class="one"><a href="#">자세히 보기</a></button>
+        <button type="button" class="one"><a href="https://art-mj1.github.io/react_recipe_apps/" target="_blank">자세히
+          보기</a></button>
        </div>
       </div>
      </div>
      <div class="image">
-      <img src="/portfolio-cover/img/gocamp.png" alt="">
+      <img src="/portfolio-cover/img/react.png" alt="">
      </div>
     </div>
    </div>
@@ -115,7 +119,7 @@
     <div class="all" id="lightslider">
      <div class="target">
       <div class="clock pe">
-       <div class="imgs"><img src="img/clock.png"></div>
+       <div class="imgs"><img src="img/clock.jpg"></div>
        <h2>01</h2>
        <div class="con">
         <h3>일러스트레이터 시계</h3>
@@ -220,7 +224,7 @@
       <div class="ye-text">
        <p><span class="un">Univ.</span>고려대학교 고고미술사학과/한국사학과 전공</p>
        <p><span class="un">Design.</span>전)그린컴퓨터아카데미 편집디자인 교육 수료</p>
-       <p><span class="un">Coding.</span>현)더조은컴퓨터아카데미 스마트웹퍼블리싱 교육 진행 중</p>
+       <p><span class="un">Coding.</span>현)더조은컴퓨터아카데미 스마트웹퍼블리싱 교육 수료</p>
       </div>
       <div class="tag">
        <h3>핵심 성격 키워드</h3>
@@ -256,8 +260,8 @@
        <div class="skil-2">
         <img src="img/js.png" alt="">
         <img src="img/database.png" alt="">
-        <img src="img/illur.png" alt="">
-        <img src="img/illur.png" alt="">
+        <img src="img/php.png" alt="">
+        <img src="img/react-i.png" alt="">
         <img src="img/illur.png" alt="">
        </div>
       </div>
@@ -277,9 +281,9 @@
       <div class="mo-skil-2">
        <img src="img/js.png" alt="">
        <img src="img/database.png" alt="">
-       <img src="img/illur.png" alt="">
-       <img src="img/illur.png" alt="">
-       <img src="img/illur.png" alt="">
+       <img src="img/php.png" alt="">
+       <img src="img/react-i.png" alt="">
+       <img src="img/jquery.png" alt="">
       </div>
      </div>
     </div>
@@ -293,8 +297,11 @@
  <script src="/portfolio-cover/lib/lightslider.js"></script>
  <script src="/portfolio-cover/js/jq.lightslider.js"></script>
  <script src="/portfolio-cover/js/jq.main.js"></script>
-
-
+ <script src="/portfolio-cover/js/jq.mobile.js"></script>
+ <script src="/portfolio-cover/lib/wow/wow.js"></script>
+ <script>
+ new WOW().init();
+ </script>
 </body>
 
 </html>

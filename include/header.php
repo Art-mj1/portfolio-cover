@@ -26,10 +26,10 @@
     <a href="/portfolio-cover/index.php" class="mobile_tit">HOME</a>
    </li>
    <li class="mobile_li">
-    <a href="#" class="mobile_tit">WORK</a>
+    <a href="#main1" class="mobile_tit">WORK</a>
     <ul class="mobile_sub_nav">
      <li class="mobile_sub_li"><a href="#main1">Renewal&Database</a></li>
-     <li class="mobile_sub_li"><a href="#main2">API&Database</a></li>
+     <li class="mobile_sub_li"><a href="#main2">API&React</a></li>
     </ul>
    </li>
    <li class="mobile_li">
@@ -47,7 +47,7 @@
  <div class="menu">
   <ul class="nav">
    <li><a href="/portfolio-cover/index.php">Home</a></li>
-   <li><a href="#">WORK</a></li>
+   <li><a href="#main1">WORK</a></li>
    <li><a href="#profile">PROFILE</a></li>
    <li><a href="#contact">CONTACT</a></li>
   </ul>
@@ -61,6 +61,28 @@
    <a href="/portfolio-cover/php/logout.php">로그아웃</a>
    <a href="#"><?=$userid?></a>
    <?php } ?>
+  </div>
+ </div>
+
+ <!-- Hidden Mega Box Menu -->
+ <div class="hidden_sub">
+  <div class="line"></div>
+  <div class="sub_nav">
+   <div class="subnav_box box_1">
+   </div>
+   <div class="subnav_box box_2">
+    <ul>
+     <li><a href="#main1">Renwal&Database</a></li>
+     <li><a href="#main2">API&REACT</a></li>
+    </ul>
+    <ul>
+   </div>
+   <div class="subnav_box box_3">
+
+   </div>
+   <div class="subnav_box box_4">
+
+   </div>
   </div>
  </div>
 </header>

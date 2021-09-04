@@ -8,7 +8,7 @@
 .main .ma-one .show{width:32%;}
 }
 @media screen and (max-width:1259px){
- header .menu .nav{width: 70%;}
+ /* header .menu .nav{width: 70%;} */
  #wrap .intro .min-image{width:46%;margin-top:5px;}
   #wrap .show .text .tit{font-size:37px;}
  #wrap .main .ma-one .show{margin-top:1%;width: 37%; height: 64%;}
@@ -29,6 +29,7 @@
  #wrap .feel .year .tag{width:100%;}
  .year .tag .tag-de{padding:9px 14px;}
  #wrap .feel .year h3{padding:0 2%;}
+ #wrap #profile{height:auto;}
  #wrap #profile .skills{display:none;}
  #wrap #profile .mo-skills{display:block;margin-top:-11%;margin-left: 29%;height:13%;}
  
@@ -104,9 +105,11 @@
   #wrap #contact .comm_table li span:nth-child(2){width:25%;}
 }
 @media screen and (max-width:768px){
-  header .menu .nav{width:65%;margin-left: 25px;}
+  header .menu .nav{width:75%;}
   header .menu .nav>li{width:25%;}
+  .hidden_sub .sub_nav{width:100%;padding-right: 141px;}
   header .login_info{width:25%;}
+  header .login_info a{font-size:13px;}
 .intro .center{margin-top:50px;}
   #wrap .intro .min-image{width:46%;}
  #wrap .intro .min-intro{margin-left:-17px;width:50%;}
@@ -122,7 +125,7 @@
   #wrap .feel .year .tag .tag-wrap{flex-flow: nowrap;width:160%;}
   #wrap .year .tag .tag-de{width:25%;}
   #wrap .year .tag .tag-de p{margin-top:1.5%;}
-  #wrap #profile .mo-skills{margin-left:0;margin-top:20px;padding:1.5%;}
+  #wrap #profile .mo-skills{margin-left:0;margin-top:20px;padding:1.5%;width:56%}
   #wrap .mo-skills .mo-skill{width:165%;}
 
 .lSSlideOuter .lSPager.lSpg{margin-top:25px; padding:2%;}
@@ -165,31 +168,62 @@
   footer .contact-me i{font-size:25px;}
 }
 @media screen and (max-width:500px){
-.menu_ico{display: flex;flex-direction: column;top:50px;}
+.menu_ico{display: flex;flex-direction: column;}
+header .hidden_sub {display:none;}
 header .menu{display:none;}
-  header .menu .nav{display:none;}
   header .login_info{display:none;}
 .main{padding:0;}
 .main .ma-one{height:410px;}
+ #profile .center h2 {border-bottom: 0.5px solid #003946; width: 50%; margin-left: 26%;}
 #wrap .feel .year .ye-text{font-size:14px;}
+#contact{height:950px;}
 }
 @media screen and (max-width:400px){
-  header{width:140%;}
+  header{width:100%;height:60px;}
   header .menu .nav{width:100%;margin-left:0;}
   header .menu .nav>li{width:25%;font-size:25px;}
-  .intro{width:140%;  padding-top: 16%;height:550px;}
-  .main{width:140%;}
+  .intro{padding-top: 10%;height:100vh;}
+  .intro .center {width: 100%;background: #f4eeed;
+    flex-direction: column; padding: 22px 0px;}
+    #wrap .intro .min-image{width:75%;}
+    #wrap .intro .min-intro{width:55%;}
+    .intro .min-intro>p{font-size:13px;}
+    #wrap .intro .min-intro>h2{font-size:20px;}
+  .main{width:100%;background:none;}
+  .main > .center{width:100%;background:#dccdc4;}
+  .main .ma-one{height:600px;flex-direction: column;}
+  .main .ma-one .image{width: 85%; height: 100%;}
+  #wrap .main .ma-one .first{margin-top:-75px;}
+  #wrap .main .ma-one .show{width:80%;}
+   #wrap .main .ma-one .second{margin-top:29px;}
+  .main-two > .center{background-color:#e9e3de;}
   #wrap .show .text .tit{font-size:19px;}
   .show .text .comment{font-size:15px;}
-  .graphic{width:110%;margin-left:46px;}
-  #profile{width:140%;padding:0;}
+  .graphic{width:100%;}
+  #wrap .graphic .all .target .pe{width:265px;height:578px;margin-right:0;}
+  #profile{width:100%;padding:0;}
   #wrap .feel .pic img{margin-top:10%;}
-  .feel .ye-text .un{font-size:16px;}
-  #wrap .feel .year .ye-text{font-size:13px;}
+ 
+  #wrap .feel .year .ye-text{font-size:11px;}
+   .feel .ye-text .un{font-size:10px;}
+   #wrap .feel .year .tag .tag-wrap{width:150%;}
   #wrap .year .tag .tag-de{width:30%;}
-  #contact {width:140%;height:925px;}
-  footer{width:140%;height:170px;}
-  footer .company_info{margin-top:5%;}
-  #contact .write{margin-top:25px;}
+  #wrap .year .tag .tag-de p{font-size:11px;}
+  .mo-skills h3{font-size:23px;}
+  #wrap .mo-skills .mo-skill{width:186%;}
+  #contact {width:100%;height:925px;}
+   #contact .write{margin-top:25px;}
   #contact .comm_center{width:90%;}
+  #contact .comm_table li span:nth-child(4){display:none;}
+  .tit_box h2{font-size:35px;}
+  #contact .comm_table{border:13px;}
+  #contact .comm_table li.comm_con span{font-size:10.5px;}
+  #wrap #contact .comm_table li span:nth-child(2){width:36%;}
+  #contact .comm_table li.comm_con span:nth-child(3){width:64%;}
+  #contact .comm_table li.comm_con span:nth-child(3) a{    text-align: center;}
+  #contact .write_form{padding:10px;}
+  footer{width:100%;height:170px;}
+  footer .company_info{margin-top:5%;}
+ footer .contact-me .call{width:85%;}
+ footer .contact-me .e-mail{width:85%;}
 }

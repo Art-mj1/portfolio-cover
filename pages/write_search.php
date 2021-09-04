@@ -77,6 +77,7 @@
  <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/footer.php"; ?>
  </div>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="/portfolio-cover/js/jq.mobile.js"></script>
 </body>
 
 </html>

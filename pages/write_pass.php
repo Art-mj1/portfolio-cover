@@ -17,7 +17,6 @@
 
 <body>
  <div id="wrap">
-  <?php include $_SERVER["DOCUMENT_ROOT"]."/portfolio-cover/include/header.php"; ?>
   <section id="contact">
    <?php
    $pass_idx = $_GET['Portfolio_idx'];
@@ -53,5 +52,6 @@
   </section>
  </div>
 </body>
+
 
 </html>

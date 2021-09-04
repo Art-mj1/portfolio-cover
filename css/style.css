@@ -1,5 +1,20 @@
-#wrap{width:100%;height:100vh;}
- header {width:100%;height:120px;background:#fff;z-index:9;}
+
+html{
+  scroll-behavior: smooth;
+}
+#wrap{width:100%;overflow: hidden;}
+ header {   
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    z-index: 11;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 10%);
+    transition:all 0.4s;
+  position: fixed;
+
+    }
+ 
  header .center{
    height: 100%;
  }
@@ -13,12 +28,26 @@ header .login_info a{padding: 0 15px;color:#555555;font-weight:400;}
 header .login_info a:nth-child(1){border-right:1px solid #212529;}
 header .login_info a:nth-child(2){padding-right:0; width:30px;height:30px;overflow:hidden;border-radius:50%; padding-left:0;}
 header.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255,255,255,0.6);
+  /* top: 0;
+  width: 100%; */
+  /* background: rgba(255,255,255,0.6); */
+  animation: show 2s 0.1s;
+  animation-fill-mode: forwards;
 }
+@keyframes show {
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(-100%);
+  }
+  100%{
 
+  background: rgba(255,255,255,0.6);
+     transform: translateY(0);
+
+  }  
+}
 section{
   padding: 120px 0;
   height: 700px;
@@ -30,7 +59,7 @@ section > .center{
 }
 
 /* Intro Section */
- .intro{width:100%;background-color:#f4eeed;}
+ .intro{width:100%;height:100vh;background-color:#f4eeed;}
  .intro .center{
    align-items: center;
    justify-content: center;
@@ -89,7 +118,7 @@ section > .center{
    object-fit: cover;
  }
  .graphic .target .homepi{margin-top: 9%; width: 100%; height: 51%;}
- .graphic .target .imgs img{width:100%;height:100%; object-fit: cover;}
+ .graphic .target .imgs img{width:100%;height:100%; object-fit: contain;}
  .graphic .all .target .pe .con{height:15%; margin-top: 5%;}
  .graphic .target .con h3{font-size:20px;color:#2e2c29;
  text-align:center;  white-space: nowrap;}
@@ -101,8 +130,8 @@ section > .center{
   .graphic .target .buttons a{color:#fff;font-size:15px;}
   .graphic .target .buttons .veg{background:#003946;height: 100%;margin: 1%;}
  /* Profile Section */
-  #profile{width:100%;height:auto;background:#f4eeed;}
-  #profile h2{font-size:40px;text-align: center;border-bottom: 1px solid #003946;padding: 1%;}
+  #profile{width:100%;height:100vh;background:#f4eeed;}
+  #profile .center h2{font-size:40px;text-align: center;border-bottom: 0.5px solid #003946;width: 100%;}
   #profile .feel{width:100%;height:100%;display:flex;}
   .feel .pic{padding: 3%; width:30%; height: 80%; margin: 1% 1%;}
   .feel .pic img{width:100%;height:90%;}
@@ -134,7 +163,7 @@ section > .center{
   .mo-skill img{width: 17%; margin: 0.5% 1%; height: 100%;}
 
 /* contact Page Style Code */
- #contact{width:100%;height: 120%;background:#e9e3de;}
+ #contact{width:100%;height: 100vh;background:#e9e3de;}
  #contact .comm_center{width:80%;margin:auto;}
 
  #contact .comm_table{background:#fff;border:20px solid #f7e8e1;padding:20px;border-radius: 10px;}
@@ -151,7 +180,7 @@ section > .center{
 white-space:nowrap;}
  #contact .comm_table li.comm_con span:nth-child(3){text-align:flex-start; padding-left:15px;}
 
-#contact .tit_box h2{font-weight:600;margin-top:1%;}
+#contact .tit_box h2{font-weight:600;margin-top:1%;font-size:38px;}
 #contact .search_paging{display:flex;justify-content: space-between; margin:10px auto 0 auto;    padding-top: 0.3%;}
 #contact .paging{display:flex;}
 #contact .paging span{width:30px;height:30px;background:#e2c5b6;color:#fff;
@@ -183,6 +212,14 @@ font-family: 'Roboto','Noto Sans KR',sans-serif;}
 #contact .write_btn button,
 #contact .write_btn a{background:#e2c5b6;color:#fff;padding:8px 25px;border-radius:5px;}
 
+#contact .write_pass{display:flex;width:100%;justify-content: center;}
+#contact .write_pass .pass{display:flex;align-items:center}
+#contact .pass label{width:30%;background:#e5c4ab;border:1px solid #e5c4ab;padding:8px;}
+#contact .pass input{width:70%;border:1px solid #e5c4ab;}
+
+#contact .search_pass{display:flex;width:100%;justify-content: center;}
+#contact .search_pass .pass{display:flex;align-items:center}
+
 /* Footer Section */
 footer{width:100%;height:16%;background:#dccdc4;}
 footer>h3{font-size:20px;font-weight:500;padding-bottom: 1%;color:#fff;}
@@ -197,12 +234,9 @@ footer .contact-me .e-mail{width:20%;display:flex;align-items: center;color:#fff
 footer .contact-me .e-mail p{padding-left:14%;color:#fff;}
 footer .company_info{width:100%;height:10%;color:#fff;margin-top:1%;}
 footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
+footer .company_info .center{margin:0;}
 
 
-#contact .write_pass{display:flex;width:100%;}
-#contact .write_pass .pass{display:flex;align-items:center}
-#contact .pass label{width:30%;background:#e5c4ab;border:1px solid #e5c4ab;padding:8px;}
-#contact .pass input{width:70%;border:1px solid #e5c4ab;}
 
 
 
@@ -248,6 +282,7 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
  height: 100vh;
  background: #fff ;
  position: fixed;
+ left:-60%;
 }
 
  .mobile_inner {
@@ -259,8 +294,8 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
  position: relative;
  padding:25px 0;
 }
-
-
+.mobile_inner .mobile_li a{font-size:16px;}
+.mobile_inner .mobile_li a:hover{color:#d0836e;}
 
  .mobile_inner .close_btn {
  position: absolute;
@@ -301,7 +336,7 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
  display: block;
  width: 10px;
  height: 2px;
- background: #000 ;
+ background: #003946 ;
  position: absolute;
  top: 50%;
  right: 27px;
@@ -312,13 +347,19 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
   display: block;
  width: 10px;
  height: 2px;
- background: #000;
+ background: #003946;
  position: absolute;
  top: 50%;
  right: 27px ;
  transform: rotate(90deg);
 }
-
+.mobile_li .mobile_tit:hover:before{
+  background: #d0836e;
+}
+.mobile_li .mobile_tit:hover:after{
+  background: #d0836e;
+transform: rotate(90deg);
+}
 .mobile_li .mobile_tit.rotate:before {
  transform: rotate(45deg)
 }
@@ -336,38 +377,30 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
 
 .mobile_sub_nav li  {
   line-height: 25px;
+  padding:5px 0;
 }
 
  .mobile_sub_nav li a {
- font-size: 12px;
+ font-size: 14px;
  color: #000;
 }
-.logo {
- padding: 20px 0;
- display: flex;
- align-items: center;}
 
-.logo_link {
- width: 247px;
- height: 18px;
- background: url(../img/mmenu_logo.png)no-repeat center center;
- background-size: cover;
-}
 
-.topnav {
- height: 100%;
+
+header .nav {
+ height: 80%;
  text-align: center;
  display: flex;
  align-items: center;
 }
 
-.topnav li {
+header .nav li {
  padding: 0 30px;
 }
 
-.topnav a {
+header .nav a {
  font-size: 17px;
- color: #fff;
+ color: #003946;
  position: relative;
  display: block;
  font-weight: bold;
@@ -375,13 +408,13 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
  padding-top: 5px;
 }
 
-.topnav a:after {
+header .nav a:after {
  content: '';
  position: absolute;
  display: block;
  width: 0;
  height: 3px;
- background: red;
+ background: #b49298;
  left: 0;
  right: 0;
  margin: auto;
@@ -389,6 +422,69 @@ footer .company_info p{color:#fff;font-size:10px;line-height: 1.8;}
  top: 61px;
 }
 
-.topnav li:hover a:after {
+header .nav li:hover a:after {
  width: 100%;
 }
+
+
+
+
+
+
+/* Hidden Mega Box Style Code */
+header .hidden_sub {
+ width: 100%;
+ height: 485px;
+ background: #fff;
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: none;
+ z-index: -1;
+}
+
+
+/* Hidden Mega Box Sub Menu Style Code */
+ .hidden_sub .sub_nav {
+    margin: 0 0 0 auto;
+    position: relative;
+    top: 105px;
+    height: 100%;
+    display: flex;
+    padding-right: 20%;
+    width: 84%;
+    justify-content: flex-end;
+}
+
+ .hidden_sub .subnav_box {
+     width: 25%;
+    text-align: center;
+}
+
+ .hidden_sub .subnav_box ul {
+ display: inline-block;
+ vertical-align: text-top;
+}
+
+ .hidden_sub .subnav_box ul .sub_nav_tit {
+ font-weight: bold;
+ margin-top: 20px;
+ font-size: 14px;
+ line-height: 30px;
+}
+
+ .hidden_sub .subnav_box ul a {
+ color: #000;
+ display: block;
+ width: 100%;
+ height: 100%;
+ line-height: 30px;
+ font-size: 14px;
+ transition: all 0.4s;
+}
+
+ .hidden_sub .subnav_box ul a:hover {
+ color: #b49298;
+}
+
+
